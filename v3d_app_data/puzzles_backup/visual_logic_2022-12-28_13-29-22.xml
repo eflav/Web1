@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="20" scrolly="19.999999999999886" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="5pN==;7A)R}Tm.,vJ$m!" x="190" y="270">
+      <field name="EVENT">mousemove</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="pCK7sQDv*|fNChE11x_h">
+          <field name="TEXT"></field>
+        </shadow>
+        <block type="text" id="o+)EgX:I@Cs=`nG6]DEY">
+          <field name="TEXT">slider</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="assignMaterial" id="y[x7Z?aVQLhQ7m9!t,aP">
+          <value name="VALUE2">
+            <shadow type="materialList" id="P%_S#a8Y^F0b6VP#}PXE">
+              <field name="FIELDNAME">Gold</field>
+            </shadow>
+          </value>
+          <value name="VALUE1">
+            <shadow type="objectList" id="Wz@[j1FCNpZ99|{]Z;Cw">
+              <field name="FIELDNAME">Cube</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="console.log" id="%%iAL`ew~FrA6j5C%P-W">
+              <value name="VALUE">
+                <shadow type="text" id=",1y@A9Gvun[3R6au{X|.">
+                  <field name="TEXT">Hello, Verge!</field>
+                </shadow>
+                <block type="getHTMLElemAttribute" id="!V,IOah`#8e!v{E1j)C{">
+                  <field name="ATTRIBUTE">value</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <shadow type="text" id="kcpjDTOXG,$RwC?He}zH">
+                      <field name="TEXT"></field>
+                    </shadow>
+                    <block type="text" id="8tNHi1*aOSlmSxMbzJ`L">
+                      <field name="TEXT">slider</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1220.4" viewport-y="28" viewport-w="825.6" viewport-h="511" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

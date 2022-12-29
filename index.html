@@ -1,0 +1,136 @@
+<html>
+<head>
+<style>
+.range-slider__range {
+  -webkit-appearance: none;
+  width: calc(100% - (0%));
+  height: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+/* custom thumb */
+.range-slider__range::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ appearance: none;
+ width: 30px;
+ height: 30px;
+ border-radius: 60%;
+ background: #ffffff;
+ cursor: pointer;
+ -webkit-transition: background .05s ease-in-out;
+ transition: background .05s ease-in-out;
+ z-index: 1;
+}
+
+.range-slider__range::-webkit-slider-thumb:hover {
+ background: #c0c0c0;
+ z-index: 1;
+}
+
+.range-slider__range:active::-webkit-slider-thumb {
+ background: #8b8b8b;
+ z-index: 1;
+}
+
+.overlay {
+    position: absolute; /* position the element absolutely */
+    top: 95%; /* position the element at the top of the page */
+    left: 5%; /* position the element at the left of the page */
+    width: 90%; /* make the element as wide as the page */
+    height: 100%; /* make the element as tall as the page */
+    z-index: 1; /* place the element on top of the iframe */
+  }
+
+.column-1 {
+    position: absolute; /* position the element absolutely */
+    top: 10%; /* position the element at the top of the page */
+    left: 5%; /* position the element at the left of the page */
+    width: 20%; /* make the element as wide as the page */
+    height: 30%; /* make the element as tall as the page */
+    z-index: 0; /* place the element on top of the iframe */
+    color: #ffffff;
+    text-align: justify;
+}
+
+.column-2 {
+    position: absolute; /* position the element absolutely */
+    top: 10%; /* position the element at the top of the page */
+    left: 70%; /* position the element at the left of the page */
+    width: 20%; /* make the element as wide as the page */
+    height: 30%; /* make the element as tall as the page */
+    z-index: 0; /* place the element on top of the iframe */
+    color: #ffffff;
+    text-align: justify;
+}
+
+.iframe {
+    position: relative; /* position the iframe relatively */
+    z-index: 0; /* place the iframe behind the overlay */
+  }
+
+body {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont; /* use the custom font for the body text */
+  color: #ffffff;
+}
+
+.rounded {
+    border-radius: 5%; /* round the edges of the image */
+  }
+
+.link {
+  color:goldenrod;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.link:hover {
+  color:rgb(79, 191, 255);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+    <!-- <iframe width="100%" height="100%" src="http://localhost:8668/applications/cube%20morph/cube%20morph.html"></iframe> -->
+    <iframe width="100%" height="100%" src="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:4039e76cca/cube%20morph/cube%20morph.html"></iframe>
+
+    <div class="column-1">
+      <h1>Floating Mystery: A Sci-Fi Adventure</h1>
+      <h2>Unexplained Phenomenon</h2>
+      <p>The sun is setting, casting a soft orange light over the hilltop. An unexpected, mysterious object has appeared in the sky.</p>
+      <h2>A Closer Look</h2>
+      <p>The figure approaches the strange object with caution. As the figure draws closer, the object's shape becomes clearer.</p>
+      <h2>Mysterious Origin</h2>
+      <p>The figure is awestruck by the craft, unsure of its origin. A faint humming noise can be heard emanating from above.</p>
+      <img src="1.png" alt="single entity" class="rounded" width="60%" height="100%">
+    </div>
+    <div class="column-2">
+      <img src="3.png" alt="alien figure" class="rounded" width="60%" height="100%">
+      <h2>A New Horizon</h2>
+      <p>The figure takes a deep breath and steps into the craft. The craft takes off, headed for a new horizon.</p>
+      <h2>The Future Unfolds</h2>
+      <p>The figure looks out the window, watching the world below. The future is uncertain, but the journey has just begun.</p>
+      <h2>The Unknown</h2>
+      <p>The craft continues its journey, heading to the unknown.The figure is ready to face whatever lies ahead.</p>
+
+      <h1><a class="link" href="https://tome.app/bespoke-furniture/floating-mystery-a-sci-fi-adventure-clc83kp8w00ko7b3ardho1evf">Take me with you...</a></h1>
+      
+    </div>
+    
+    <div class="range-slider">
+      <div class="overlay">
+        <input class="range-slider__range" id="slider" type="range" value="0" min=".2" max="1" step="0.001">
+      </div>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,53 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="20" scrolly="20" scale="0.9"></tab>
+  <tab name="main" type="MainTab" active="true" scrollx="20.000000000000227" scrolly="19.999999999999943" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="5pN==;7A)R}Tm.,vJ$m!" x="190" y="270">
+      <field name="EVENT">mousemove</field>
+      <field name="PARENT">TRUE</field>
+      <value name="ID">
+        <shadow type="text" id="pCK7sQDv*|fNChE11x_h">
+          <field name="TEXT"></field>
+        </shadow>
+        <block type="text" id="o+)EgX:I@Cs=`nG6]DEY">
+          <field name="TEXT">slider</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setMorphFactor" id="#fJ;,))6(/(Us=ns$KYb">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+          <field name="TARGET_NAME">&lt;no targets&gt;</field>
+          <value name="OBJ_NAME">
+            <shadow type="objectList" id="8Y`0Jo#9cHMkSIjHLn;e">
+              <field name="FIELDNAME">Cube</field>
+            </shadow>
+          </value>
+          <value name="FACTOR">
+            <shadow type="math_number" id="dCSR0+R$~,KJrSe})1Y8">
+              <field name="NUM">0.5</field>
+            </shadow>
+            <block type="getObjTransform" id="Dm4Y2o5R}[%oIFS#UwLi">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" useworldspace="false"></mutation>
+              <field name="MODE">position</field>
+              <field name="COORD">x</field>
+              <value name="TARGETOBJ">
+                <shadow type="objectList" id="|!q0X_c-PJKe`sD[[,b4">
+                  <field name="FIELDNAME">Icosphere</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="getMorphFactor" id="OO[~O9O(LU8yuhq4;Wz#" x="310" y="510">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" useflexibletargetinputslot="false"></mutation>
+      <field name="TARGET_NAME">&lt;no targets&gt;</field>
+      <value name="OBJ_NAME">
+        <shadow type="objectList" id="(j*oI-Y?MsDXItSiXqa6">
+          <field name="FIELDNAME">Cube</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1220.4" viewport-y="28" viewport-w="825.6" viewport-h="511" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
